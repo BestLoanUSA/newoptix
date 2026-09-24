@@ -1,7 +1,6 @@
 {
   "_readme": "New Optix 사이트의 모든 사실 정보. 이 파일만 고치고 `node build.js`를 다시 돌리면 전 페이지에 반영된다. _assumed 목록에 있는 항목은 아직 업주 확인 전 가정값이다.",
   "_assumed": [
-    "domain (www.newoptix.com을 대표 주소로 가정 — apex를 대표로 쓰면 수정)",
     "yearsServing",
     "familyOwned",
     "languages",
@@ -9,8 +8,8 @@
     "payments 세부 항목",
     "email"
   ],
-  "draft": true,
-  "domain": "https://www.newoptix.com",
+  "draft": false,
+  "domain": "https://newoptix.com",
   "name": "New Optix",
   "tagline": "Eyeglasses, sunglasses & contact lenses in Garden Grove",
   "phone": "(714) 530-6700",
