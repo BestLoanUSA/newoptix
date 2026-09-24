@@ -147,7 +147,6 @@ const NAV = [
 function header(active, lang) {
   const links = NAV.map(([t, h]) => `<a href="${h}"${active === h ? ' aria-current="page"' : ''}>${t}</a>`).join('');
   return `
-${S.draft ? '<div class="draft-bar">Draft preview — some details are still being confirmed.</div>' : ''}
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="logo" href="/" aria-label="${esc(S.name)} home">${LOGO_MARK}<span>New&nbsp;Optix</span></a>
