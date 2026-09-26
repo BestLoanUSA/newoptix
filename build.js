@@ -216,8 +216,9 @@ function page({ pathName, title, description, body, schemas = [], lang = 'en', a
 <meta name="description" content="${esc(description)}">
 <link rel="canonical" href="${canonical}">
 ${S.draft ? '<meta name="robots" content="noindex, nofollow">' : ''}
-<link rel="alternate" hreflang="en" href="${S.domain}/">
+${pathName === '/' || pathName === '/ko/' ? `<link rel="alternate" hreflang="en" href="${S.domain}/">
 <link rel="alternate" hreflang="ko" href="${S.domain}/ko/">
+<link rel="alternate" hreflang="x-default" href="${S.domain}/">` : ''}
 <meta property="og:type" content="website">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
